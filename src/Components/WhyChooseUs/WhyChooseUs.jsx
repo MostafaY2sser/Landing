@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAnchor, FaTree, FaHome, FaBell, FaCogs } from "react-icons/fa";
 
-const LanguageProficiency = () => {
+const WhyChooseUs = () => {
   return (
     <div className="bg-[#DABF86] px-8 pt-8 pb-24" dir="rtl">
       <h2 className="text-3xl font-bold my-11 text-white pr-4">لماذا تختارنا:</h2>
@@ -81,7 +81,7 @@ const LanguageProficiency = () => {
   );
 };
 
-export default LanguageProficiency;
+export default WhyChooseUs;
 
 
 
