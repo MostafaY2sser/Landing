@@ -9,9 +9,12 @@ function App() {
 
   return (
     <div className='app'>
-      <div className="appContainer ">
         <Header/>
+
         <OurCourses/>
+
+      <div className="appContainer ">
+
       </div>
     </div>
   )
