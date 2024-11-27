@@ -1,0 +1,28 @@
+
+
+@media( max-width : 1250px ) {
+    .footer .bottom{
+        width: 100%;
+    }
+
+}
+@media( max-width : 767px ) {
+    .footer  {
+        padding:  0;
+    }
+
+}
+
+@media( max-width : 935px ) {
+    .footer .bottom {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media( max-width : 767px ){
+    .footer .bottom  .copy{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

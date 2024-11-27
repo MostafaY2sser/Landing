@@ -1,0 +1,55 @@
+
+
+.hero .text .logo h4{
+    position: relative;
+}
+
+.hero .text .logo h4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--text-color);
+    width: 50%;
+    height: 1px;
+    bottom: 0 ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media ( max-width : 1020px ) {
+    .firstSction  .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstSction  .hero .text{
+        width: 90%;
+    }
+    .firstSction  .hero .box{
+        width: 70%;
+    }
+}
+
+
+
+@media ( max-width : 500px ){
+    .firstSction  .hero .box{
+        width: 85%;
+    }
+    .firstSction  .hero .text p{
+        font-size: 18px;
+    }
+    .firstSction  .hero .text .logo{
+        width: 100%;
+    }
+    .firstSction  .hero .text .logo img{
+        width: 100px;
+    }
+    .firstSction  .hero .text .logo h4{
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    .hero .bottom{
+        right: -30px;
+    }
+} 

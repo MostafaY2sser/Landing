@@ -23,7 +23,7 @@ a{
 
 .appContainer{
   max-width: 1640px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   margin: 0 auto;
 }
 
@@ -34,3 +34,23 @@ a{
   --text-color : #855D00; 
 }
 
+/* Global main header */
+.globalMain-header{
+  color: var(--text-color);
+  line-height: 60px;
+  font-weight: 800;
+  font-size: 50px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.globalMain-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; 
+  height: 2px; 
+  background-color: var(--text-color) ; 
+}
