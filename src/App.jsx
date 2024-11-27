@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className='app'>
-      <div className="appContainer">
-        
+      <div className="appContainer bg-[red]">
+        ede
       </div>
     </div>
   )
