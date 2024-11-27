@@ -72,7 +72,7 @@ const Header = () => {
 
 
                     <img className="absolute top-[-45px] left-[-45px]" src={top} alt="" />
-                    <img className="absolute bottom-[-45px] right-[-45px]" src={bottom} alt="" />
+                    <img className="bottom absolute bottom-[-45px] right-[-45px]" src={bottom} alt="" />
 
 
                 </div>
