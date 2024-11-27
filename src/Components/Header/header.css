@@ -1,0 +1,16 @@
+
+
+.hero .text .logo h4{
+    position: relative;
+}
+
+.hero .text .logo h4::after{
+    content: "";
+    position: absolute;
+    background-color: var(--text-color);
+    width: 50%;
+    height: 1px;
+    bottom: 0 ;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -3,6 +3,9 @@ import { BsPersonFillCheck } from "react-icons/bs";
 import img from "../../../../public/images/Container.png";
 import { useState } from "react";
 import chang from '../../../../public/images/chang.png'
+import Cn from '../cn/Cn'
+import Fr from '../fr/Fr'
+import Fl from '../fl/Fl'
 
 const OurCourses = () => {
 
@@ -11,11 +14,11 @@ const OurCourses = () => {
     const renderContent = () => {
         switch (activeTab) {
           case "fr":
-            return <p>fr</p>;
+            return <Fr/>;
           case "cn":
-            return <p>cn</p>;
+            return <Cn />;
           case "fl":
-            return <p>fl</p> ;
+            return <Fl/> ;
           default:
             return <p>يرجى اختيار اللغه</p>;
         }
@@ -56,9 +59,9 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("fr")} className="flex items-center justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <button onClick={() => setActiveTab("fr")} className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
-                <BsPersonFillCheck className="ml-2 text-[--dark-color]" />
+                <BsPersonFillCheck className="ml-2 text-white" />
               </button>
             </div>
           </div>
@@ -83,14 +86,14 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">30 Dec, 2024</p>
                 </div>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center ">
                   <BsPersonFillCheck className="text-[--dark-color]" />
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <button onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
-                <BsPersonFillCheck className="ml-2 text-[--dark-color]" />
+                <BsPersonFillCheck className="ml-2 text-white" />
               </button>
             </div>
           </div>
@@ -120,19 +123,19 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("fl")} className="flex items-center justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <button onClick={() => setActiveTab("fl")} className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
-                <BsPersonFillCheck className="ml-2 text-[--dark-color]" />
+                <BsPersonFillCheck className="ml-2 text-white" />
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-full py-3 px-5">
         {renderContent()}
       </div>
       {/* img position */}
-      <img className="absolute top-[70%] right-0" src={chang} alt="chang" />
+      <img className="absolute top-[30%] right-0" src={chang} alt="chang" />
     </div>
   );
 };

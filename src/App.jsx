@@ -9,15 +9,12 @@ function App() {
 
   return (
     <div className='app'>
-        <Header/>
-
-        <OurCourses/>
-
       <div className="appContainer ">
-
+        <Header/>
+        <OurCourses/>
       </div>
     </div>
   )
 }
 
-export default App
+export default App;
