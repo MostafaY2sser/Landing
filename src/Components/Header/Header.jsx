@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className="firstSction">
 
-            <div className="header bg-[--dark-color] py-2">
+            <div className="header bg-[--dark-color] py-2" id='form'>
                 <button className="text-[white] text-[20px]  bg-gradient-to-r from-[--text-color] to-[--light-color] mx-5 py-1 px-5 rounded-[10px] border-b-4 border-[white] ">احجز الان</button>
             </div>
 
@@ -24,9 +24,9 @@ const Header = () => {
                 <div className="text flex flex-col items-end  gap-10 w-[45%]">
                     <div className="logo w-[80%] flex items-center justify-between  flex-row-reverse">
                         <img src={logo} alt="" />
-                        <h4 className="text-[45px] font-[700] text-[--text-color] pb-3">! مرحبا بك</h4>
+                        <h4 className="text-[45px] font-[700] text-[--text-color] pb-3" >! مرحبا بك</h4>
                     </div>
-                    <p className="text-end text-[30px] ">”معهد بعد للغات“ هو مؤسسة تعليمية ناشئة (Plus Boud )متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات األجنبية، بما في ذلك ”الصينية، الفرنسية، واإلنجليزية“</p>
+                    <p className="text-start text-[30px] " dir='rtl'>معهد بعد للغات "هو مؤسسة تعليمية ناشئة" (Plus Boud) متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات الأجنبية، بما في ذلك "الصينية، الفرنسية، والإنجليزية"</p>
                 </div>
 
 
@@ -35,7 +35,7 @@ const Header = () => {
 
                     <h2 className="text-end text-[20px] font-[700] mb-10">لاستفسارك حول التسجيل ببرنامج اللغة الصينية أملئ البيانات</h2>
                     <div className="inputOne pl-[20px] border-[1px]  border-[#333] rounded-[30px] flex items-center justify-between">
-                        <input className='border-none outline-0 w-[70%] h-[40px]' type="text" name="username" placeholder="Complete Name" />
+                        <input className='border-none outline-0 w-[70%] h-[40px]' type="text" name="username" placeholder="الاسم كامل" />
                         <div className="icon border-[1px] border-[#333] h-[40px] w-[40px] rounded-[30px] flex items-center justify-center">
                             <CiUser/>
                         </div>
@@ -44,7 +44,7 @@ const Header = () => {
                     <div className="inputTwo mt-5 pl-[10px] border-[1px]  border-[#333] rounded-[30px] flex items-center justify-between" > 
                         <div className="left ">
                             <span className="border-r-[1px] border-[#333] pr-1 mr-3">+966</span>
-                            <input className="border-none outline-0 w-[70%] h-[40px]" type="text" name="number"  placeholder="Enter Your Number"/>
+                            <input className="border-none outline-0 w-[70%] h-[40px]" type="text" name="number"  placeholder="ادخل رقم الهاتف"/>
                         </div>
                         <div className="icon border-[1px] border-[#333] h-[40px] w-[40px] rounded-[30px] flex items-center justify-center">
                             <IoIosPhonePortrait />

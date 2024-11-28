@@ -3,11 +3,11 @@ import { FaAnchor, FaTree, FaHome, FaBell, FaCogs } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-[#DABF86] px-8 pt-8 pb-24" dir="rtl">
+    <div className="bg-[#DABF86] px-4 sm:px-8 pt-8 pb-24" dir="rtl">
       <h2 className="text-3xl font-bold my-11 text-white pr-4">لماذا تختارنا:</h2>
 
       {/* شبكة الأقسام */}
-      <div className="flex flex-wrap md:flex-nowrap justify-start pr-8 gap-11">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-11 sm:pr-0 md:flex-nowrap md:pr-8">
         {/* العنصر الأول */}
         <div className="relative bg-white border-2 rounded-xl rounded-tr-none pb-3 w-full md:w-[450px] h-auto">
           <div className="flex items-center justify-start">
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
             </div>
             <h3 className="text-[#5a4634] font-bold text-lg ml-2">إتقان اللغات:</h3>
           </div>
-          <p className="text-[#5a4634] text-sm mt-2 pr-4">
+          <p className="text-[#5a4634] text-sm mt-2 pr-4 sm:pr-0">
             تمكين الطالب من إتقان اللغات المستهدفة بجميع جوانبها (التحدث، الكتابة، القراءة، والاستماع).
           </p>
         </div>
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap md:flex-nowrap justify-start pr-8 gap-11 pt-10">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-11 pt-10 sm:pr-0 md:flex-nowrap md:pr-8">
         {/* العنصر الثالث */}
         <div className="relative bg-white border-2 rounded-xl rounded-tr-none pb-3 w-full md:w-[570px] h-auto">
           <div className="flex items-center justify-start">
@@ -55,7 +55,9 @@ const WhyChooseUs = () => {
             <div className="bg-[#855D00] ml-2 p-2 rounded-lg text-white rounded-tr-none rounded-br-none">
               <FaHome className="text-lg" />
             </div>
-            <h3 className="text-[#5a4634] font-bold text-lg ml-2">تعزيز التفكير النقدي والإبداعي:</h3>
+            <h3 className="text-[#5a4634] font-bold text-lg ml-2">
+              تعزيز التفكير النقدي والإبداعي:
+            </h3>
           </div>
           <p className="text-[#5a4634] text-sm mt-2 pr-4">
             ربط تعلم اللغات بتطوير مهارات التفكير وحل المشكلات.
@@ -63,7 +65,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap md:flex-nowrap justify-center items-center pr-8 gap-11 pt-10">
+      <div className="flex flex-wrap justify-center items-center gap-11 pt-10 sm:pr-0 md:pr-8">
         {/* العنصر الأخير */}
         <div className="relative bg-white border-2 rounded-xl rounded-tr-none pb-3 w-full md:w-[750px] h-auto">
           <div className="flex items-center justify-start">
@@ -82,7 +84,3 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
-
-
-
-

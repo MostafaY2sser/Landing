@@ -20,11 +20,11 @@ function App() {
 
 
       <div className="appContainer ">
+        <OurCourses/>
         <Nabza/>
         <WhyChooseUs/>
         <LearningMethodology/>
 
-        <OurCourses/>
 
         <Message/>
         <Footer/>

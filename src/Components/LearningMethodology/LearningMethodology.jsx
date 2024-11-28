@@ -13,7 +13,7 @@ const LearningMethadology = () => {
                     <div className="relative flex justify-center items-center mb-6">
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
                             <img
-                                src="/public/images/Vector (4).png"
+                                src="/images/Vector (4).png"
                                 alt="Interactive Learning"
                                 className="w-16 h-16"
                             />
@@ -38,7 +38,7 @@ const LearningMethadology = () => {
                     <div className="relative flex justify-center items-center mb-6">
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
                             <img
-                                src="/public/images/Vector (5).png"
+                                src="/images/Vector (5).png"
                                 alt="Interactive Learning"
                                 className="w-16 h-16"
                             />
@@ -61,7 +61,7 @@ const LearningMethadology = () => {
                     <div className="relative flex justify-center items-center mb-6">
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
                             <img
-                                src="/public/images/Vector (6).png"
+                                src="/images/Vector (6).png"
                                 alt="Interactive Learning"
                                 className="w-16 h-16"
                             />
@@ -71,23 +71,23 @@ const LearningMethadology = () => {
                     <h3 className="text-lg font-semibold mb-4">INTEGRATION TECHNOLOGY</h3>
                     <div className="leading-6 flex flex-col gap-2">
                         <div className="box flex items-center gap-1">
-                            <img src="/public/images/Vector.png" alt="" />
+                            <img src="/images/Vector.png" alt="" />
                             <span className="text-[--dark-color]">التعليم الرقمي</span>
                         </div>
                         <div className="box flex items-center gap-1">
-                            <img src="/public/images/Vector.png" alt="" />
+                            <img src="/images/Vector.png" alt="" />
                             <span className="text-[--dark-color]">الفصول الافتراضية</span>
                         </div>
                         <div className="box flex items-center gap-1">
-                            <img src="/public/images/Vector.png" alt="" />
+                            <img src="/images/Vector.png" alt="" />
                             <span className="text-[--dark-color]">التدريب العملي</span>
                         </div>
                         <div className="box flex items-center gap-1">
-                            <img src="/public/images/Vector.png" alt="" />
+                            <img src="/images/Vector.png" alt="" />
                             <span className="text-[--dark-color]">ورش عمل مكثفة</span>
                         </div>
                         <div className="box flex items-center gap-1">
-                            <img src="/public/images/Vector.png" alt="" />
+                            <img src="/images/Vector.png" alt="" />
                             <span className="text-[--dark-color]">مشاريع تطبيقية</span>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const LearningMethadology = () => {
                     <div className="relative flex justify-center items-center mb-6">
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
                             <img
-                                src="/public/images/Vector (7).png"
+                                src="/images/Vector (7).png"
                                 alt="Interactive Learning"
                                 className="w-16 h-16"
                             />

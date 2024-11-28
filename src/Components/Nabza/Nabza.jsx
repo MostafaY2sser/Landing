@@ -1,5 +1,6 @@
 
 import React from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const Nabza = () => {
     return (
@@ -30,8 +31,11 @@ const Nabza = () => {
                     <span dir="ltr" className="inline-block"> HSK</span>
                     بامتياز. يتميز البرنامج بفريق تدريسي متخصص بخبرة واسعة في تعليم اللغة الصينية، بالإضافة إلى تقديم خطط تعلم فردية تناسب احتياجات وأهداف كل متعلم، سواء كانت أكاديمية أو مهنية. الجمع بين الاعتماد الدولي، المنهاج المتكامل، والدعم الشخصي يجعل هذه الدورات الخيار الأمثل لإتقان اللغة الصينية.
                 </p>
-                <p className="mb-2 px-2 sm:px-4">
+                <p className="mb-2 px-2 sm:px-4 flex">
                     لمزيد من التفاصيل يمكنك التسجيل في أعلى الصفحة.
+                <a href="#form">
+                <FaArrowUp className="mt-1" />
+                </a>
                 </p>
             </div>
 

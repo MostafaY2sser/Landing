@@ -12,6 +12,8 @@ const OurCourses = () => {
     const [activeTab, setActiveTab] = useState("books");
 
     const renderContent = () => {
+      const isSmallScreen = window.innerWidth < 640;
+
         switch (activeTab) {
           case "fr":
             return <Fr/>;
@@ -20,7 +22,7 @@ const OurCourses = () => {
           case "fl":
             return <Fl/> ;
           default:
-            return <p>يرجى اختيار اللغه</p>;
+            return null;
         }
       };
 
@@ -28,9 +30,7 @@ const OurCourses = () => {
     <div className="w-full flex flex-col items-center justify-center relative">
       <div className="flex flex-col gap-3 md:gap-8 border border-[--dark-color] max-w-[750px] py-5 px-10">
         <h2 className="globalMain-header">دوراتنا</h2>
-        <p className="font-bold text-center text-[20px] text-[#191E23]">
-          مؤسسة تعليمية ناشئة )Plus Boud )متخصصة في تقديم خدمات تعليمية مبتكرة
-          لتعليم اللغات األجنبية، بما في ذلك ”الصينية، الفرنسية، واإلنجليزية
+        <p className="font-bold text-center text-[20px] text-[#191E23]">مؤسسة تعليمية ناشئة (Plus Boud) متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات الأجنبية، بما في ذلك الصينية، الفرنسية، والإنجليزية
         </p>
 
         <div className="flex items-center justify-center gap-2 flex-col sm:flex-row">
@@ -59,7 +59,8 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("fr")} className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <button //onClick={() => setActiveTab("fr")} 
+              className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
               </button>
@@ -123,7 +124,8 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("fl")} className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <button //onClick={() => setActiveTab("fl")}
+               className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
               </button>
@@ -135,7 +137,7 @@ const OurCourses = () => {
         {renderContent()}
       </div>
       {/* img position */}
-      <img className="absolute top-[30%] right-0" src={chang} alt="chang" />
+      {/* <img className= " absolute top-[30%] right-0 " src={chang} alt="chang" /> */}
     </div>
   );
 };
