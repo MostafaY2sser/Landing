@@ -1,6 +1,8 @@
 import { FaClock } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
-import img from "../../../../public/images/Container.png";
+import chinaImage from "../../../../public/images/chinaImage.jpeg";
+import EnglishImage from "../../../../public/images/EnglishImage.jpeg";
+import FrinshImage from "../../../../public/images/FrinshImage.jpeg";
 import { useState } from "react";
 import Cn from '../cn/Cn';
 import Fr from '../fr/Fr';
@@ -33,18 +35,19 @@ const OurCourses = () => {
         </p>
 
         <div className="flex items-center justify-center gap-2 flex-col sm:flex-row">
-          <div className="py-3 border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
+        
+          <div className="w-full md:w-full border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
             {/* الصورة */}
             <div className="overflow-hidden">
               <img
-                className="w-[220px] transition-transform duration-300 group-hover:scale-110"
-                src={img}
+                className="w-full transition-transform duration-300 group-hover:scale-110"
+                src={FrinshImage}
                 alt="img"
               />
             </div>
 
             {/* text */}
-            <div className="flex flex-col items-center justify-center gap-2 py-2 ">
+            <div className="py-5 flex flex-col items-center justify-center gap-2">
               <h3>تعليم اللغات الفرنسية</h3>
 
               <div className="flex items-center justify-center gap-2">
@@ -69,18 +72,18 @@ const OurCourses = () => {
           </div>
 
 {/* الصيني */}
-          <div className="py-3 border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
+          <div className="w-full border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
             {/* الصورة */}
             <div className="overflow-hidden">
               <img
-                className="w-[220px] transition-transform duration-300 group-hover:scale-110"
-                src={img}
+                className="w-full transition-transform duration-300 group-hover:scale-110"
+                src={chinaImage}
                 alt="img"
               />
             </div>
 
             {/* text */}
-            <div className="flex flex-col items-center justify-center gap-2 py-2 ">
+            <div className="py-5 flex flex-col items-center justify-center gap-2 ">
               <h3>تعليم اللغات الصينية</h3>
 
               <div className="flex items-center justify-center gap-2">
@@ -101,18 +104,18 @@ const OurCourses = () => {
             </div>
           </div>
 
-          <div className="py-3 border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
+          <div className="w-full border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
             {/* الصورة */}
             <div className="overflow-hidden">
               <img
-                className="w-[220px] transition-transform duration-300 group-hover:scale-110"
-                src={img}
+                className="w-full transition-transform duration-300 group-hover:scale-110"
+                src={EnglishImage}
                 alt="img"
               />
             </div>
 
             {/* text */}
-            <div className="flex flex-col items-center justify-center gap-2 py-2 ">
+            <div className="py-5 flex flex-col items-center justify-center gap-2 ">
               <h3>تعليم اللغه الانجليزيه</h3>
 
               <div className="flex items-center justify-center gap-2">
