@@ -71,7 +71,7 @@ const Header = ({imgBottom}) => {
                         <img src={logo} alt="" />
                         <h4 className="text-[45px] font-[700] text-[--text-color] pb-3" >! مرحبا بك</h4>
                     </div>
-                    <p className="text-start text-[30px] " dir='rtl'>معهد بعد للغات "هو مؤسسة تعليمية ناشئة" (Plus Boud) متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات الأجنبية، بما في ذلك "الصينية، الفرنسية، والإنجليزية"</p>
+                    <p className="text-start text-[30px] " dir='rtl'>معهد بعد للغات "هو مؤسسة تعليمية ناشئة" <br />( Boud Plus) متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات الأجنبية، بما في ذلك "الصينية، الفرنسية، والإنجليزية"</p>
                 </div>
 
 
