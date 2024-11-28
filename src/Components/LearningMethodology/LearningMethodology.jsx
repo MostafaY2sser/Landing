@@ -1,7 +1,10 @@
 
+<<<<<<< HEAD
 
 
 import React from "react";
+=======
+>>>>>>> 9ac7af8d3b9d614b5f6e32f945b6612da68a87b6
 
 const LearningMethadology = () => {
     return (

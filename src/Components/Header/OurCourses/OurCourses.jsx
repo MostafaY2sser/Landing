@@ -6,10 +6,13 @@ import chang from '../../../../public/images/chang.png'
 import Cn from '../cn/Cn'
 import Fr from '../fr/Fr'
 import Fl from '../fl/Fl'
+import { Link, useNavigate } from "react-router-dom";
 
 const OurCourses = () => {
 
     const [activeTab, setActiveTab] = useState("books");
+
+    const navigate = useNavigate()
 
     const renderContent = () => {
       const isSmallScreen = window.innerWidth < 640;
@@ -59,11 +62,11 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button //onClick={() => setActiveTab("fr")} 
+              <Link to="/chaina" // onClick={() => setActiveTab("fr")} 
               className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -92,10 +95,10 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <Link to="/english" onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -124,11 +127,11 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button //onClick={() => setActiveTab("fl")}
+              <Link to="/franch" //onClick={() => setActiveTab("fl")}
                className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,14 +2,59 @@
 import './header.css'
 import logo from "/public/images/logo.png"
 import top from "/public/images/top.png"
-import bottom from "/public/images/bottom.png"
+// import bottom from "/public/images/bottom.png"
 import { IoIosPhonePortrait } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
+import { useState } from 'react';
 
 
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+const Header = ({imgBottom}) => {
 
 
+
+    // إدارة الحالة للحقول
+    const [formData, setFormData] = useState({
+        username: '',
+        phone: '',
+        courseType: 'Online', // القيمة الافتراضية
+    });
+
+
+    // التعامل مع تغيير الحقول
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+
+    const handleSubmit = () => {
+        if (!formData.username || !formData.phone) {
+            alert('يرجى ملء جميع الحقول المطلوبة.');
+            return;
+        }
+    
+        fetch('https://plus-boud.aalyasser.com/data_saver.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+            alert('تم إرسال البيانات بنجاح!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.');
+        });
+    };
+    
 
     return (
         <div className="firstSction">
@@ -35,7 +80,10 @@ const Header = () => {
 
                     <h2 className="text-end text-[20px] font-[700] mb-10">لاستفسارك حول التسجيل ببرنامج اللغة الصينية أملئ البيانات</h2>
                     <div className="inputOne pl-[20px] border-[1px]  border-[#333] rounded-[30px] flex items-center justify-between">
-                        <input className='border-none outline-0 w-[70%] h-[40px]' type="text" name="username" placeholder="الاسم كامل" />
+                        <input className='border-none outline-0 w-[70%] h-[40px]' type="text" name="username" placeholder="الاسم كامل" 
+                            value={formData.username} 
+                            onChange={handleChange} 
+                        />
                         <div className="icon border-[1px] border-[#333] h-[40px] w-[40px] rounded-[30px] flex items-center justify-center">
                             <CiUser/>
                         </div>
@@ -44,7 +92,11 @@ const Header = () => {
                     <div className="inputTwo mt-5 pl-[10px] border-[1px]  border-[#333] rounded-[30px] flex items-center justify-between" > 
                         <div className="left ">
                             <span className="border-r-[1px] border-[#333] pr-1 mr-3">+966</span>
-                            <input className="border-none outline-0 w-[70%] h-[40px]" type="text" name="number"  placeholder="ادخل رقم الهاتف"/>
+                            <input className="border-none outline-0 w-[70%] h-[40px]" type="text" name="phone"  placeholder="ادخل رقم الهاتف"
+                                value={formData.phone} 
+                                onChange={handleChange}
+                        />
+
                         </div>
                         <div className="icon border-[1px] border-[#333] h-[40px] w-[40px] rounded-[30px] flex items-center justify-center">
                             <IoIosPhonePortrait />
@@ -55,24 +107,32 @@ const Header = () => {
 
                     <div className="inputRadio cursor-pointer">
                         <div className="online ">
-                            <input className="mr-2" id="online" type="radio" name="courseType" />
+                            <input className="mr-2" id="online" type="radio" name="courseType" 
+                                checked={formData.courseType === 'Online'} 
+                                onChange={handleChange} 
+                            />
                             <label className="text-[#757575] " htmlFor="online">Online</label>
                         </div>
                         <div className="ofline ">
-                            <input  className="mr-2" id="ofline" type="radio" name="courseType" />
+                            <input  className="mr-2" id="ofline" type="radio" name="courseType" 
+                                checked={formData.courseType === 'Offline'} 
+                                onChange={handleChange} 
+                            />
                             <label className="text-[#757575]" htmlFor="ofline">Offline</label>
                         </div>
                     </div>
 
                     <div className="flex justify-center mt-10">
-                        <button className="bg-gradient-to-b from-[--text-color] to-[--light-color] py-2 px-10 mb-3 text-[20px] font-[700] text-[white] rounded-lg">
+                        <button className="bg-gradient-to-b from-[--text-color] to-[--light-color] py-2 px-10 mb-3 text-[20px] font-[700] text-[white] rounded-lg"
+                            onClick={handleSubmit}
+                        >
                             ارسل الان
                         </button>
                     </div>  
 
 
                     <img className="absolute top-[-45px] left-[-45px]" src={top} alt="" />
-                    <img className="bottom absolute bottom-[-45px] right-[-45px]" src={bottom} alt="" />
+                    <img className="bottom absolute bottom-[-45px] right-[-45px]" src={imgBottom} alt="" />
 
 
                 </div>
@@ -85,3 +145,7 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
