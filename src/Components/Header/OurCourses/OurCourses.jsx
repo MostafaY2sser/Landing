@@ -2,17 +2,16 @@ import { FaClock } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
 import img from "../../../../public/images/Container.png";
 import { useState } from "react";
-import chang from '../../../../public/images/chang.png'
-import Cn from '../cn/Cn'
-import Fr from '../fr/Fr'
-import Fl from '../fl/Fl'
+import Cn from '../cn/Cn';
+import Fr from '../fr/Fr';
+import Fl from '../fl/Fl';
 
 const OurCourses = () => {
 
     const [activeTab, setActiveTab] = useState("books");
 
     const renderContent = () => {
-      const isSmallScreen = window.innerWidth < 640;
+      
 
         switch (activeTab) {
           case "fr":
@@ -59,7 +58,8 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button //onClick={() => setActiveTab("fr")} 
+              <button 
+              onClick={() => setActiveTab("fr")}
               className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
@@ -111,7 +111,7 @@ const OurCourses = () => {
 
             {/* text */}
             <div className="flex flex-col items-center justify-center gap-2 py-2 ">
-              <h3>تعليم اللغات األجنبية</h3>
+              <h3>تعليم اللغه الانجليزيه</h3>
 
               <div className="flex items-center justify-center gap-2">
                 <div className="flex items-center justify-center">
@@ -125,6 +125,7 @@ const OurCourses = () => {
                 </div>
               </div>
               <button //onClick={() => setActiveTab("fl")}
+              onClick={() => setActiveTab("fl")}
                className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
@@ -136,8 +137,7 @@ const OurCourses = () => {
       <div className="w-full py-3 px-5">
         {renderContent()}
       </div>
-      {/* img position */}
-      {/* <img className= " absolute top-[30%] right-0 " src={chang} alt="chang" /> */}
+       
     </div>
   );
 };
