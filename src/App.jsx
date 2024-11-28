@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='app'>
-      <Header />
+      {/* <Header /> */}
 
 
       <div className="appContainer relative ">
@@ -36,7 +36,17 @@ function App() {
         <WhyChooseUs />
         <LearningMethodology />
         <Message /> */}
+        {/* <Footer /> */}
+     
+
+
+        <Routes>
+          <Route path="/" element={<Chaina />} />
+          <Route path="/english" element={<English />} />
+          <Route path="/franch" element={<Franch />} />
+        </Routes>
         <Footer />
+
         <a>
           <a
             href="https://api.whatsapp.com/send/?phone=%2B966537211776&text&type=phone_number&app_absent=0"
@@ -47,17 +57,6 @@ function App() {
             <FaWhatsapp className="text-2xl" />
           </a>
         </a>
-
-
-
-
-
-        <Routes>
-          <Route path="/" element={<Chaina />} />
-          <Route path="/english" element={<English />} />
-          <Route path="/franch" element={<Franch />} />
-        </Routes>
-        <Footer />
 
       </div>
     </div>
