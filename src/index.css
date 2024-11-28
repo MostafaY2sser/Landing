@@ -21,9 +21,12 @@ a{
   text-decoration: none
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 .appContainer{
   max-width: 1640px;
-  /* padding: 0 20px; */
   margin: 0 auto;
 }
 
