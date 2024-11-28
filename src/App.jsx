@@ -10,24 +10,34 @@ import WhyChooseUs from './Components/WhyChooseUs/WhyChooseUs'
 import OurCourses from './Components/Header/OurCourses/OurCourses'
 
 import Message from './Components/Message/Message'
+import { FaWhatsapp } from "react-icons/fa";
 
 
 function App() {
 
   return (
     <div className='app'>
-        <Header/>
+      <Header />
 
 
-      <div className="appContainer ">
-        <OurCourses/>
-        <Nabza/>
-        <WhyChooseUs/>
-        <LearningMethodology/>
+      <div className="appContainer relative ">
+        <OurCourses />
+        <Nabza />
+        <WhyChooseUs />
+        <LearningMethodology />
+        <Message />
+        <Footer />
+        <a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B966537211776&text&type=phone_number&app_absent=0"
+            target="_blank"
+            className=" fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+            aria-label="Chat on WhatsApp"
+          >
+            <FaWhatsapp className="text-2xl" />
+          </a>
+        </a>
 
-
-        <Message/>
-        <Footer/>
       </div>
     </div>
   )
