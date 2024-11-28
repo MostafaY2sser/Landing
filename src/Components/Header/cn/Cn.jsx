@@ -4,7 +4,7 @@ import ggg from '../../../../public/images/img_2.jpg'
 import img3 from '../../../../public/images/img_4.jpg'
 import img4 from '../../../../public/images/img_5.jpg'
 import img5 from '../../../../public/images/img_6.jpg'
-
+import China from '../../china/China'
 const Cn = () => {
   return (
     <div>
@@ -183,6 +183,7 @@ const Cn = () => {
       </div>
       
     </div>
+    <China/>
     </div>
   );
 };

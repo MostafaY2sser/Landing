@@ -2,21 +2,17 @@ import { FaClock } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
 import img from "../../../../public/images/Container.png";
 import { useState } from "react";
-import chang from '../../../../public/images/chang.png'
-import Cn from '../cn/Cn'
-import Fr from '../fr/Fr'
-import Fl from '../fl/Fl'
-import { Link, useNavigate } from "react-router-dom";
+import Cn from '../cn/Cn';
+import Fr from '../fr/Fr';
+import Fl from '../fl/Fl';
+
+import { Link } from "react-router-dom";
 
 const OurCourses = () => {
 
     const [activeTab, setActiveTab] = useState("books");
 
-    const navigate = useNavigate()
-
     const renderContent = () => {
-      const isSmallScreen = window.innerWidth < 640;
-
         switch (activeTab) {
           case "fr":
             return <Fr/>;
@@ -62,14 +58,17 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <Link to="/chaina" // onClick={() => setActiveTab("fr")} 
-              className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+
+             
+              <Link to="/Franch" className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
               </Link>
+              
             </div>
           </div>
 
+{/* الصيني */}
           <div className="py-3 border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
             {/* الصورة */}
             <div className="overflow-hidden">
@@ -95,7 +94,7 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <Link to="/english" onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <Link to="/" onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
               </Link>
@@ -114,7 +113,7 @@ const OurCourses = () => {
 
             {/* text */}
             <div className="flex flex-col items-center justify-center gap-2 py-2 ">
-              <h3>تعليم اللغات األجنبية</h3>
+              <h3>تعليم اللغه الانجليزيه</h3>
 
               <div className="flex items-center justify-center gap-2">
                 <div className="flex items-center justify-center">
@@ -127,8 +126,7 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <Link to="/franch" //onClick={() => setActiveTab("fl")}
-               className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <Link to="/English" className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3"> 
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
               </Link>
@@ -136,11 +134,11 @@ const OurCourses = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full py-3 px-5">
         {renderContent()}
       </div>
-      {/* img position */}
-      {/* <img className= " absolute top-[30%] right-0 " src={chang} alt="chang" /> */}
+       
     </div>
   );
 };

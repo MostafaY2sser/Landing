@@ -5,6 +5,7 @@ import WhyChooseUs from './../../Components/WhyChooseUs/WhyChooseUs';
 import Message from './../../Components/Message/Message';
 import OurCourses from './../../Components/Header/OurCourses/OurCourses';
 import LearningMethodology from './../../Components/LearningMethodology/LearningMethodology';
+import Fl from '../../Components/Header/fl/Fl';
 
 
 const English = () => {
@@ -12,6 +13,7 @@ const English = () => {
         <div>
             <Header/>
             <OurCourses/>
+            <Fl />
             <Nabza/>
             <WhyChooseUs/>
             <LearningMethodology/>

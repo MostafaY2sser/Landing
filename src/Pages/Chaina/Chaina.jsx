@@ -6,6 +6,7 @@ import Message from './../../Components/Message/Message';
 import OurCourses from './../../Components/Header/OurCourses/OurCourses';
 import LearningMethodology from './../../Components/LearningMethodology/LearningMethodology';
 import bottom from "/public/images/bottom.png"
+import Cn from '../../Components/Header/cn/Cn';
 
 
 
@@ -15,6 +16,7 @@ const Chaina = () => {
         <div>
             <Header  imgBottom={bottom}/>
             <OurCourses/>
+            <Cn/>
             <Nabza/>
             <WhyChooseUs/>
             <LearningMethodology/>
