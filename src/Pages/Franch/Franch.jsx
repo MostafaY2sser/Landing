@@ -5,6 +5,7 @@ import Message from './../../Components/Message/Message';
 import OurCourses from './../../Components/Header/OurCourses/OurCourses';
 import LearningMethodology from './../../Components/LearningMethodology/LearningMethodology';
 import Fr from '../../Components/Header/fr/Fr';
+import NabzaFl from '../../Components/NabzaFl/NabzaFl';
 
 
 const Franch = () => {
@@ -13,7 +14,7 @@ const Franch = () => {
 
             <OurCourses/>
             <Fr />
-            <Nabza/>
+            <NabzaFl/>
             <WhyChooseUs/>
             <LearningMethodology/>
             <Message/>

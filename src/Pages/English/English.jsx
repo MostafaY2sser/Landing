@@ -6,6 +6,7 @@ import Message from './../../Components/Message/Message';
 import OurCourses from './../../Components/Header/OurCourses/OurCourses';
 import LearningMethodology from './../../Components/LearningMethodology/LearningMethodology';
 import Fl from '../../Components/Header/fl/Fl';
+import NabzaEn from '../../Components/NabzaEn.jsx/NabzaEn';
 
 
 const English = () => {
@@ -14,7 +15,7 @@ const English = () => {
             <Header/>
             <OurCourses/>
             <Fl />
-            <Nabza/>
+            <NabzaEn/>
             <WhyChooseUs/>
             <LearningMethodology/>
             <Message/>
