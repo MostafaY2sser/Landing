@@ -6,13 +6,13 @@ import Cn from '../cn/Cn';
 import Fr from '../fr/Fr';
 import Fl from '../fl/Fl';
 
+import { Link } from "react-router-dom";
+
 const OurCourses = () => {
 
     const [activeTab, setActiveTab] = useState("books");
 
     const renderContent = () => {
-      
-
         switch (activeTab) {
           case "fr":
             return <Fr/>;
@@ -58,15 +58,17 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button 
-              onClick={() => setActiveTab("fr")}
-              className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+
+             
+              <Link to="/Franch" className="flex items-center text-white justify-center rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
+              
             </div>
           </div>
 
+{/* الصيني */}
           <div className="py-3 border border-[--dark-color] rounded-sm hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] transition-shadow duration-300 group">
             {/* الصورة */}
             <div className="overflow-hidden">
@@ -92,10 +94,10 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <Link to="/" onClick={() => setActiveTab("cn")} className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -124,16 +126,15 @@ const OurCourses = () => {
                   <p className="ml-2 text-[--dark-color]">Admin</p>
                 </div>
               </div>
-              <button //onClick={() => setActiveTab("fl")}
-              onClick={() => setActiveTab("fl")}
-               className="flex items-center justify-center text-white rounded-md bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3">
+              <Link to="/English" className="flex items-center justify-center rounded-md text-white bg-gradient-to-b from-[--light-color] to-[--text-color] py-2 px-3"> 
                 اعرف المزيد
                 <BsPersonFillCheck className="ml-2 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
       <div className="w-full py-3 px-5">
         {renderContent()}
       </div>
