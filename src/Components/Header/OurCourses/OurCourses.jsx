@@ -26,7 +26,7 @@ const OurCourses = () => {
       };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center relative">
+    <div className="w-full flex flex-col items-center justify-center relative mt-10">
       <div className="flex flex-col gap-3 md:gap-8 border border-[--dark-color] max-w-[750px] py-5 px-10">
         <h2 className="globalMain-header">دوراتنا</h2>
         <p className="font-bold text-center text-[20px] text-[#191E23]">مؤسسة تعليمية ناشئة ( Boud plus) متخصصة في تقديم خدمات تعليمية مبتكرة لتعليم اللغات الأجنبية، بما في ذلك الصينية، الفرنسية، والإنجليزية
