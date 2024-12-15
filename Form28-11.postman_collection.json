@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "45ae7393-8361-4776-83d7-f46197b299eb",
+		"name": "Form",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37252485",
+		"_collection_link": "https://webbing-4771.postman.co/workspace/Landing-Page-Form~a0210fb0-2e9a-4fef-a3f6-a1f9145798e8/collection/37252485-45ae7393-8361-4776-83d7-f46197b299eb?action=share&source=collection_link&creator=37252485"
+	},
+	"item": [
+		{
+			"name": "Submit Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pierre",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "atend",
+							"value": "offline",
+							"description": "online or offline",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://plus-boud.aalyasser.com/data_saver.php",
+					"protocol": "https",
+					"host": [
+						"plus-boud",
+						"aalyasser",
+						"com"
+					],
+					"path": [
+						"data_saver.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch table data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://plus-boud.aalyasser.com/get_data.php?password=your_secret_password&start_date&end_date&sort=desc",
+					"protocol": "https",
+					"host": [
+						"plus-boud",
+						"aalyasser",
+						"com"
+					],
+					"path": [
+						"get_data.php"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "your_secret_password"
+						},
+						{
+							"key": "start_date",
+							"value": null
+						},
+						{
+							"key": "end_date",
+							"value": null
+						},
+						{
+							"key": "sort",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download xlsx file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://plus-boud.aalyasser.com/download.php",
+					"protocol": "https",
+					"host": [
+						"plus-boud",
+						"aalyasser",
+						"com"
+					],
+					"path": [
+						"download.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
